@@ -1,0 +1,22 @@
+{
+  "name": "scratch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nil1143/scratch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nil1143/scratch/issues"
+  },
+  "homepage": "https://github.com/nil1143/scratch#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
