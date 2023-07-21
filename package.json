@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/nil1143/scratch/issues"
   },
-  "homepage": "https://github.com/nil1143/scratch#readme",
+  "homepage": "https://github.com/nil1143/scratch",
   "devDependencies": {
     "tailwindcss": "^3.3.3"
   }
