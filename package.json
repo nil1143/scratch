@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/nil1143/scratch/issues"
   },
-  "homepage": "https://github.com/nil1143/scratch",
+  "homepage": "https://github.com/nil1143/scratch/public",
   "devDependencies": {
     "tailwindcss": "^3.3.3",
     "gh-pages": "^4.0.0"
