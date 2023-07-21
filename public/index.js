@@ -9,10 +9,16 @@ hamburger.addEventListener('click', () => {
         nav.classList.add('hidden')
     }})
 
-const navLink= document.querySelectorAll('.nav-link')
 
+const navLink= document.querySelectorAll('.nav-link')
 
 navLink.forEach(link => link.addEventListener('click', () => {
     nav.classList.add('hidden')
 }))
 
+
+const xicon = document.querySelector('#icon')
+
+const changeIcon = () => {
+    xicon.classList.toggle('fa-xmark')
+}
