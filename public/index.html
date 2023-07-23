@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/08ba1e35c6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="/public/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-        <nav class="px-0 bg-stone-900 text-secondary-100 md:flex md:items-center md:justify-between ">
+    <!-- NAVIGATION BAR -->
+        <nav class="py-2 bg-stone-900 text-secondary-100 md:flex md:items-center md:justify-between ">
 
             <div class="flex justify-between items-center mx-6"> 
                 <span class="text-3xl font-extralight"><a href="#">Tom.dev</a></span>          
@@ -17,7 +19,7 @@
                 </span>
             </div>  
 
-                <ul id="nav" class="md:flex md:items-center md:text-xl z-[-1] md:z-auto md:static md: mr-10 absolute bg-stone-900 w-full md:w-auto py-1 text-center font-mono hidden">
+                <ul id="nav" class="md:flex md:items-center md:text-xl z-[1] md:z-auto md:static md: mr-10 absolute bg-stone-900 w-full md:w-auto py-1 text-center font-mono hidden">
                     <li class="nav-link mx-4 py-3 hover:text-cyan-500 duration-500">
                         <a class="nav-link" href="#"><i class="fa-sharp fa-regular fa-user mr-2"></i>About me</a>
                     </li>
@@ -27,12 +29,67 @@
                     <li class="nav-link mx-4 py-3 hover:text-cyan-500 duration-500">
                         <a class="nav-link" href="#"><i class="fa-regular fa-envelope mr-2"></i>Contact</a>
                     </li>
-                </ul>
-
-                
-
-                
+                </ul>                
         </nav>
+        <!-- CONTACT ME  -->
+        <section class="p-4 text-center flex-col bg-gradient-to-tr from-[#b6bef2] via-white to-slate-200
+          md:grid md:grid-cols-3 md:gap-4">
+            <div class="px-8 pt-6 pb-8  md:m-auto flex-col ">
+                <h2 class='text-4xl'>Get in touch</h2>
+                <div class='w-72 p-5'>If you interested about a project collaboration or you simply want to ask me a question,
+                     feel free to fill up the form or just send me an e-mail to tnil1143@gmail.com</div>
+            </div>    
+            <div class='icons'>
+              <a href='https://github.com/nil1143'><i class="fa-brands fa-square-github contact-me-links"></i></a>      
+              <a href='https://www.linkedin.com/in/t-nil-b5b88a239/'><i class="fa-brands fa-linkedin contact-me-links"></i></a>
+              <a href='https://twitter.com/home'><i class="fa-brands fa-square-twitter contact-me-links"></i></a>
+              <a href='https://google.com'><i class= "fa-solid fa-envelope contact-me-links"></i></a>
+          </div>
+            <form class="custom-border flex flex-col items-center justify-center  text-center rounded px-8 pt-6 pb-8  border-solid border-stone-700
+                  " >
+                <div class="mb-4  flex flex-col w-64">
+                    <label class=" "for="full-name">Full name</label>
+                    <input class='inputs' type='text' id='full-name' placeholder='Enter your name'></input>
+                </div>
+                <div class=" mb-4 flex flex-col w-64">
+                    <label for="email" >Email</label>
+                    <input class='inputs' type='text' id='email' placeholder='Enter your email adress'></input>
+                </div>
+               
+                    <label for="message" >Message</label>
+                    <textarea class='input-message w-64 h-36 bg-[#f7f4f0]' type='text' placeholder='Tell me what you think...'id='message'></textarea>
+               
+                <div class="button">Send</div>
+            </form>
+        </section>
+
+        <div class="w-full max-w-xs">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                  Username
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                  Password
+                </label>
+                <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+                <p class="text-red-500 text-xs italic">Please choose a password.</p>
+              </div>
+              <div class="flex items-center justify-between">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                  Sign In
+                </button>
+                <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+                  Forgot Password?
+                </a>
+              </div>
+            </form>
+            <p class="text-center text-gray-500 text-xs">
+              &copy;2020 Acme Corp. All rights reserved.
+            </p>
     <script src="index.js"></script>
 </body>
 </html>

@@ -3,3 +3,22 @@
 @tailwind utilities;
 
 
+.inputs {
+    
+    background-color: rgb(247, 244, 240); /* #f7f4f0 */
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+}
+
+.inputs.error {
+    
+}
+
+.custom-border {
+    border: solid 3px #e2e2e2;
+    border-radius: 20px;
+    background: white;
+}
