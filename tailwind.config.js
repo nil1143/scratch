@@ -4,13 +4,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#FF6363',
-        secondary: {
-          100: '#E2E2D5',
-          200: '#888883',
-        }
+        first: '#61892F', // darkgreen
+        second: '#86C232', // green
+        third: '#222629', // dark
+        fourth: '#474B4F', // gray
+        fifth: '#6B6E70' // silver
+      },
+      fontFamily: {
+        inconsolata: ['"Inconsolata"', 'monospace'],
+        rajdhani: ['"Rajdhani"', 'sans-serif'],
+        ysabeau1: ['"Ysabeau Office"', 'sans-serif'],
+        ysabeau2: ['"Ysabeau SC"', 'sans-serif']
       }
-
     },
   },
   plugins: [],

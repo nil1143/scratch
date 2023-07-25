@@ -4,67 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/08ba1e35c6.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Ysabeau+Office:wght@1;100;200;300;400;500;600;700;800;900;1000&family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
     <link href="/public/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <!-- NAVIGATION BAR -->
-        <nav class="py-2 bg-stone-900 text-secondary-100 md:flex md:items-center md:justify-between ">
+  <div class="fixed w-full  py-2 bg-stone-800 text-sky-100 md:flex md:items-center md:justify-between z-[1]"> 
+    <div class="flex justify-between items-center mx-6"> 
+      <span class="text-3xl font-custom2"><a href="#">Tom.dev</a></span>          
+      <span class="hamburger md:hidden text-3xl cursor-pointer  hover:text-second ">
+        <!-- CHANGE ICON FUNCTION -->
+        <i id="icon" onclick="changeIcon()" class="fa-solid fa-bars hover:text-second duration-500 transition ease-in-out hover:translate-1 hover:scale-125"></i>
+      </span>
+    </div>
 
-            <div class="flex justify-between items-center mx-6"> 
-                <span class="text-3xl font-extralight"><a href="#">Tom.dev</a></span>          
-                <span class="hamburger text-3xl cursor-pointer md:hidden hover:text-cyan-500 ">
-                    <i class="fa-solid fa-bars hover:text-cyan-500 duration-500" id="icon" onclick="changeIcon()"></i>
-                </span>
-            </div>  
+    <ul id="nav" class="md:flex  md:text-xl z-[1] opacity-95  md:static mr-10 absolute bg-stone-800 w-full md:w-auto py-1 text-center font-ysabeau2 font-bold hidden">
+      <li class=" py-3 hover:text-second duration-500 transition ease-in-out hover:-translate-x-2 hover:scale-110">
+        <a class="px-4 py-3" href="#">
+          <i class="fa-sharp fa-regular fa-user mr-3"></i>About me</a>
+      </li>
+      <li class="py-3 hover:text-second duration-500 transition ease-in-out hover:-translate-x-2 hover:scale-110">
+        <a class="px-4 py-3" href="#">
+          <i class="fa-sharp fa-solid fa-code mr-3"></i>Projects</a>
+      </li>
+      <li class="  py-3 hover:text-second duration-500 transition ease-in-out hover:-translate-x-2 hover:scale-110">
+        <a class="px-4 py-3" href="#">
+          <i class="fa-regular fa-envelope mr-3"></i>Contact</a>
+      </li>
+    </ul>                
+  </div>
 
-                <ul id="nav" class="md:flex md:items-center md:text-xl z-[1] md:z-auto md:static md: mr-10 absolute bg-stone-900 w-full md:w-auto py-1 text-center font-mono hidden">
-                    <li class="nav-link mx-4 py-3 hover:text-cyan-500 duration-500">
-                        <a class="nav-link" href="#"><i class="fa-sharp fa-regular fa-user mr-2"></i>About me</a>
-                    </li>
-                    <li class="nav-link mx-4 py-3 hover:text-cyan-500 duration-500">
-                        <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-code mr-2"></i>Projects</a>
-                    </li>
-                    <li class="nav-link mx-4 py-3 hover:text-cyan-500 duration-500">
-                        <a class="nav-link" href="#"><i class="fa-regular fa-envelope mr-2"></i>Contact</a>
-                    </li>
-                </ul>                
-        </nav>
+      <!-- HOME SECTION -->
+  <div class=" h-screen flex pt-20">
+    <div class="m-auto px-5 font-custom2 ">
+      <h1 class="text-4xl">Welcome</h1>
+      <h2 class="text-lg"> Check my site broooooo</h2>
+    </div>
+    <div class="ripple-background -z-1 md:-z-[1]">
+      <div class="circle xxlarge shade1"></div>
+      <div class="circle xlarge shade2"></div>
+      <div class="circle large shade3"></div>
+      <div class="circle medium shade4"></div>
+      <div class="circle small shade5"></div>
+    </div>
+  </div>
+        
         <!-- CONTACT ME  -->
-        <section class="p-4 text-center flex-col bg-gradient-to-tr from-[#b6bef2] via-white to-slate-200
-          md:grid md:grid-cols-3 md:gap-4">
-            <div class="px-8 pt-6 pb-8  md:m-auto flex-col ">
-                <h2 class='text-4xl'>Get in touch</h2>
-                <div class='w-72 p-5'>If you interested about a project collaboration or you simply want to ask me a question,
-                     feel free to fill up the form or just send me an e-mail to tnil1143@gmail.com</div>
-            </div>    
-            <div class='icons'>
-              <a href='https://github.com/nil1143'><i class="fa-brands fa-square-github contact-me-links"></i></a>      
-              <a href='https://www.linkedin.com/in/t-nil-b5b88a239/'><i class="fa-brands fa-linkedin contact-me-links"></i></a>
-              <a href='https://twitter.com/home'><i class="fa-brands fa-square-twitter contact-me-links"></i></a>
-              <a href='https://google.com'><i class= "fa-solid fa-envelope contact-me-links"></i></a>
+  <div class="mx-3 mb-3 ">
+    <h2 class="md:text-4xl text-xl">Contact</h2>
+    <div class="line h-1 w-6 rounded-full bg-amber-500 justify-center"></div>
+  </div>    
+  <section class="relative p-4 text-center md:grid md:grid-cols-2 md:gap-4 font-ysabeau2">
+    <!-- bg-[url('/src/img1')] -->
+    <!-- bg-gradient-to-tr from-gray-500 via-[#b6bef2] to-slate-800 -->
+      <div class=" pt-6 pb-8 md:m-5 my-auto mx-0 md:items-center ">
+        <h2 class="p-2 my-4 text-4xl border-b-slate-200 border-b-2 pb-6 ">Get in touch</h2>
+        
+            <!-- <span class='text-left '>If you interested about a project collaboration or you simply want to ask me a question,
+               feel free to fill up the form or just send me an e-mail to tnil1143@gmail.com</span>          -->
+        <div class='flex flex-col md:grid md:grid-cols-2 gap-5 md:gap-12 m-2'>
+          <a href='https://github.com/nil1143'><i class=" fa-brands fa-square-github contact-me-links"></i>github</a>      
+          <a href='https://www.linkedin.com/in/t-nil-b5b88a239/'><i class="fa-brands fa-linkedin contact-me-links"></i>moj.linked.in</a>
+          <a href='https://twitter.com/home'><i class="fa-brands fa-square-twitter contact-me-links"></i>moj.twitter</a>
+          <a href='https://google.com'><i class= "fa-solid fa-envelope contact-me-links"></i>moj.gmail</a>
+          
+          <svg class="w-6 h-6 text-white animate-bounce" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+          </svg>
+          <!-- HIDDEN MODAL -->
+        </div> 
+      </div>
+      <div id="modal" class="hidden absolute items-center p-5 bg-slate-800 bg-opacity-25 md:w-fit w-fit rounded-2xl md:left-96 mt-7">
+        <h3 class="m-5 p-1 md:text-3xl text-xl mb-5">Your message has been sent!</h3>
+        <div id="close-btn" class=" mb-7  bg-orange-400 rounded-3xl w-fit mt-5 md:mt-0">
+          <a href="" class="flex px-10 py-2 ">
+            <span>Close</span></a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center custom-border bg-neutral-800 md:max-w-lg bg-opacity-80">
+        <form class=" flex flex-col text-left rounded px-8 pt-6 pb-2 my-2 border-solid border-stone-700 " >
+          <div class="form-box mb-2  flex flex-col">
+            <label class=" "for="full-name">Full name</label>
+            <input class='inputs' type='text' id='full-name' placeholder='Enter your name'></input>
           </div>
-            <form class="custom-border flex flex-col items-center justify-center  text-center rounded px-8 pt-6 pb-8  border-solid border-stone-700
-                  " >
-                <div class="mb-4  flex flex-col w-64">
-                    <label class=" "for="full-name">Full name</label>
-                    <input class='inputs' type='text' id='full-name' placeholder='Enter your name'></input>
-                </div>
-                <div class=" mb-4 flex flex-col w-64">
-                    <label for="email" >Email</label>
-                    <input class='inputs' type='text' id='email' placeholder='Enter your email adress'></input>
-                </div>
-               
-                    <label for="message" >Message</label>
-                    <textarea class='input-message w-64 h-36 bg-[#f7f4f0]' type='text' placeholder='Tell me what you think...'id='message'></textarea>
-               
-                <div class="button">Send</div>
-            </form>
-        </section>
+          <div class="form-box mb-4 flex flex-col" id="formbox">
+            <label for="email" >Email</label>
+            <input class='inputs' type='text' id='email' placeholder='Enter your email adress'></input>
+            <p id="message" class="message hidden">this is incorrect email address</p>
+          </div>
+          <div class="mb-4 flex flex-col">
+            <label for="message" >Message</label>
+            <textarea class='inputs w-auto' type='text' placeholder='Tell me what you think...'id='message'></textarea>            
+          </div>   
+      </form>
+      
+      
+      <button type="button" id="send-btn" class="flex font-mono text-xl uppercase mb-7 ml-8 bg-orange-400 rounded-3xl w-fit transition ease-in-out hover:translate-x-3 hover:scale-110">
+        <a href="" class="flex px-10 py-2 ">
+        <span class="">Send</span>
+        <svg class="w-5 ml-2 " fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"></path>
+        </svg> </a>
+      </button> 
+    </div>          
+  </section>
 
         <div class="w-full max-w-xs">
-            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
               <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
                   Username
@@ -78,7 +127,7 @@
                 <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
                 <p class="text-red-500 text-xs italic">Please choose a password.</p>
               </div>
-              <div class="flex items-center justify-between">
+              <div class="">
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                   Sign In
                 </button>
@@ -90,6 +139,8 @@
             <p class="text-center text-gray-500 text-xs">
               &copy;2020 Acme Corp. All rights reserved.
             </p>
+            </div>
+
     <script src="index.js"></script>
 </body>
 </html>
