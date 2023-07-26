@@ -15,6 +15,9 @@ module.exports = {
         rajdhani: ['"Rajdhani"', 'sans-serif'],
         ysabeau1: ['"Ysabeau Office"', 'sans-serif'],
         ysabeau2: ['"Ysabeau SC"', 'sans-serif']
+      },
+      boxShadow: {
+        neon: "0 0 5px theme('colors.first')"
       }
     },
   },

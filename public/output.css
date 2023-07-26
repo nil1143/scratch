@@ -628,8 +628,8 @@ video {
   margin-right: 2.5rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
 .mt-5 {
@@ -638,14 +638,6 @@ video {
 
 .mt-7 {
   margin-top: 1.75rem;
-}
-
-.mr-4 {
-  margin-right: 1rem;
-}
-
-.mr-3 {
-  margin-right: 0.75rem;
 }
 
 .block {
@@ -825,6 +817,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-first {
+  --tw-bg-opacity: 1;
+  background-color: rgb(97 137 47 / var(--tw-bg-opacity));
+}
+
+.bg-second {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 194 50 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-25 {
   --tw-bg-opacity: 0.25;
 }
@@ -952,10 +954,6 @@ video {
   font-family: "Ysabeau SC", sans-serif;
 }
 
-.font-ysabeau1 {
-  font-family: "Ysabeau Office", sans-serif;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -988,14 +986,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-extralight {
-  font-weight: 200;
-}
-
-.font-extrabold {
-  font-weight: 800;
 }
 
 .uppercase {
@@ -1053,6 +1043,12 @@ video {
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-neon {
+  --tw-shadow: 0 0 5px #61892F;
+  --tw-shadow-colored: 0 0 5px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1262,6 +1258,16 @@ body{
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-second:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 194 50 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-first:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(97 137 47 / var(--tw-bg-opacity));
+}
+
 .hover\:text-blue-800:hover {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
@@ -1335,16 +1341,12 @@ body{
     justify-content: space-between;
   }
 
-  .md\:gap-16 {
-    gap: 4rem;
+  .md\:gap-12 {
+    gap: 3rem;
   }
 
   .md\:gap-4 {
     gap: 1rem;
-  }
-
-  .md\:gap-12 {
-    gap: 3rem;
   }
 
   .md\:text-3xl {
