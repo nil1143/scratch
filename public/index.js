@@ -16,8 +16,9 @@ const navLink= document.querySelectorAll('.nav-link')
 
 navLink.forEach(link => link.addEventListener('click', () => {
     nav.classList.add('hidden')
-}))
-
+    xicon.classList.remove('fa-xmark')
+}
+))
 
 const xicon = document.querySelector('#icon')
 

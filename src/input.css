@@ -37,63 +37,63 @@ body{
     border-radius: 50%;
     background: #86C232;
     animation: ripple 15s infinite;
-    box-shadow: 0px 0px 1px 0px #2b9fd8;
+    box-shadow: 0px 0px 1px 0px #ffffff;
     /* #508fb9, yellow nice- rgb(255, 210, 114) */
     
   }
   
   .small{
-    width: 100px;
-    height: 100px;
-    right: -50px;
-    bottom: 300px;
-  }
-  
-  .medium{
-    width: 200px;
-    height: 200px;
-    right: -100px;
+    width: 150px;
+    height: 150px;
+    right: -75px;
     bottom: 250px;
   }
   
-  .large{
+  .medium{
     width: 300px;
     height: 300px;
     right: -150px;
-    bottom: 200px;
+    bottom: 175px;
   }
   
-  .xlarge{
-    width: 400px;
-    height: 400px;
-    right: -200px;
-    bottom: 150px;
-  }
-  
-  .xxlarge{
-    width: 500px;
-    height: 500px;
-    right: -250px;
+  .large{
+    width: 450px;
+    height: 450px;
+    right: -225px;
     bottom: 100px;
   }
   
+  .xlarge{
+    width: 600px;
+    height: 600px;
+    right: -300px;
+    bottom: 25px;
+  }
+  
+  .xxlarge{
+    width: 750px;
+    height: 750px;
+    right: -375px;
+    bottom: -50px;
+  }
+  
   .shade1{
-    opacity: 0.2;
+    opacity: 0.1;
   }
   .shade2{
-    opacity: 0.4;
+    opacity: 0.2;
   }
   
   .shade3{
-    opacity: 0.6;
+    opacity: 0.3;
   }
   
   .shade4{
-    opacity: 0.7;
+    opacity: 0.4;
   }
   
   .shade5{
-    opacity: 0.8;
+    opacity: 0.5;
   }
   
   @keyframes ripple{
@@ -137,7 +137,9 @@ body{
 .button {
     padding: 5px;
 }
-
+.nav-link {
+  scroll-behavior: smooth;
+}
 /* 
 #nav a:before
 {
