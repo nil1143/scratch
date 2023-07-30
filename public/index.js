@@ -29,27 +29,42 @@ const changeIcon = () => {
 // CONTACT ME
 
 const sendBtn = document.querySelector('#send-btn')
+const modal = document.querySelector('#modal')
 
 sendBtn.addEventListener('click', e => 
 {
     e.preventDefault();
     checkInputs()
     checkEmail(email)
-    
 
-
+    checking()
 
 })
+
+const checking = () => {
+    let errorCount = 0
+
+    allInputs.forEach(el => {
+        if(el.classList.contains('inputs-error')) {
+            errorCount++;
+        }
+    })
+
+    if(errorCount === 0 ) {
+        modal.classList.remove('hidden')
+    }
+    console.log(errorCount);
+}
 
 const allInputs = document.querySelectorAll('.inputs')
 
 const checkInputs = () => {
     allInputs.forEach(el => {
         if(el.value == '') {
-            console.log('ERROR');
+      
             el.classList.add('inputs-error');
         } else {
-            console.log('good');
+    
             el.classList.remove('inputs-error')
         }
     })
@@ -63,18 +78,20 @@ const checkEmail = email => {
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if(email.value.match(validRegex)) {
-        console.log('Prawidłowy !!');
+     
         email.classList.remove('inputs-error')
 
     } else { 
-        console.log('invalid!!!!');
+
         email.placeholder = 'Wrong email address!!'  
         email.value = ''
         email.classList.add('inputs-error')
     }
 }
 
-const closeBtn = document.querySelector('#')
+const closeBtn = document.querySelector('#close-btn')
 
-
-
+closeBtn.addEventListener('click', e => {
+    e.preventDefault();
+    modal.classList.add('hidden')
+})

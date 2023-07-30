@@ -29,6 +29,7 @@ body{
     transition: 0.3s;
     color: rgb(224 242 254);
     /* #3399ff -main, goldenrod  */
+    
   }
   
   
@@ -139,6 +140,19 @@ body{
 }
 .nav-link {
   scroll-behavior: smooth;
+}
+
+.project-box {
+  display:flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 35px;
+  color: black;
+  align-items: center;
+}
+
+.skill-icons {
+  fill: white;
 }
 /* 
 #nav a:before
