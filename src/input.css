@@ -142,15 +142,12 @@ body{
   scroll-behavior: smooth;
 }
 
-.project-box {
+/* .project-box {
   display:flex;
   flex-direction: column;
-  
   margin: 35px;
- 
   align-items: center;
- 
-}
+} */
 
 .skill-icons {
   fill: white;
