@@ -733,10 +733,6 @@ video {
   width: 1.5rem;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
 .w-\[340px\] {
   width: 340px;
 }
@@ -1304,9 +1300,7 @@ body{
 .project-box {
   display:flex;
   flex-direction: column;
-  background-color: white;
   margin: 35px;
-  color: black;
   align-items: center;
 }
 

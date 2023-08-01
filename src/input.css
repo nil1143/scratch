@@ -145,9 +145,9 @@ body{
 .project-box {
   display:flex;
   flex-direction: column;
-  background-color: white;
+  
   margin: 35px;
-  color: black;
+ 
   align-items: center;
  
 }
