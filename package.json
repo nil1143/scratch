@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss build -i src/input.css -o public/output.css"
+    "build": "tailwindcss build -i src/input.css -o public/output.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
