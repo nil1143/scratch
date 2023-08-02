@@ -17,7 +17,8 @@ module.exports = {
         ysabeau2: ['"Ysabeau SC"', 'sans-serif']
       },
       boxShadow: {
-        neon: "0 0 5px theme('colors.first')"
+        neon: "0 0 5px theme('colors.first')",
+        neon2: "5px 0 40px 7px theme('colors.first')"
       }
     },
   },

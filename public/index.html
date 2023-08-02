@@ -148,28 +148,45 @@
     <div class="line h-1 w-6 shadow-neon animate-pulse rounded-full bg-first justify-center"></div>
   </div> 
   <div class="m-10 justify-center grid md:grid-cols-2 lg:grid-cols-3 gap-y-4">
-    <div class="flex flex-col p-4 m-2 rounded-2xl w-80 items-center bg-sky-50 bg-opacity-5 backdrop-blur-xl">
+    <div class="flex flex-col border-none border-2 shadow-neon2 overflow-auto rounded-3xl w-fit items-center bg-sky-50 bg-opacity-5 backdrop-blur-xl">
       <img class="" src="../src/weather-image2.png">
-      <h2>Project1</h2>
-      <p>Project info</p>
-      <span class="text-xs">
-        <i class="fa-brands fa-html5"> HTML</i>
-        <i class="fa-brands fa-css3-alt"> CSS</i>
-        <i class="fa-brands fa-js"> JS</i>
-        <i class="fa-solid fa-network-wired"> API</i>
-      </span>
+      <div class="p-5 flex flex-col items-center">
+        <h2>Project1</h2>
+        <p>Project info</p>
+        <span class="text-xs">
+          <i class="fa-brands fa-html5"> HTML</i>
+          <i class="fa-brands fa-css3-alt"> CSS</i>
+          <i class="fa-brands fa-js"> JS</i>
+          <i class="fa-solid fa-network-wired"> API</i>
+        </span>
+        <div class="buttons">
+          <button type="button" class="w-20 font-mono uppercase my-2  md:animate-pulse shadow-neon hover:bg-second rounded-3xl transition ease-in-out hover:-translate-3 hover:scale-110">
+            <a href="http://www.google.com" class="flex justify-center py-2" target="_blank">
+            <span class="text-lg">Resume</span>
+            
+             </a>
+          </button>
+          <button type="button" class="w-20 font-mono text-xl uppercase my-2  md:animate-pulse shadow-neon hover:bg-second rounded-3xl transition ease-in-out hover:-translate-3 hover:scale-110">
+            <a href="http://www.google.com" class="flex justify-center py-2" target="_blank">
+            <span class="text-lg">Resume</span>
+            
+             </a>
+          </button>
+        </div>
+      </div>
+      
     </div>
-    <div class="flex flex-col p-4 m-2 rounded-2xl w-80 items-center bg-sky-50 bg-opacity-5 backdrop-blur-xl">
+    <div class="flex flex-col p-4 m-2 rounded-2xl w-80 items-center shadow-neon bg-sky-50 bg-opacity-5 backdrop-blur-xl">
       <img src="">
       <h2>Project1</h2>
       <p>Project info</p>
     </div>
-    <div class="flex flex-col p-4 m-2 rounded-2xl w-80 items-center bg-sky-50 bg-opacity-5 backdrop-blur-xl">
+    <div class="flex flex-col p-4 m-2 rounded-2xl w-80 items-center shadow-slate-950 shadow-xl bg-sky-50 bg-opacity-5 backdrop-blur-xl">
       <img src="../src/weather-image1.png">
       <h2>Project1</h2>
       <p>Project info</p>
     </div>
-    <div class="flex flex-col p-4 m-2 rounded-2xl w-80 items-center bg-sky-50 bg-opacity-5 backdrop-blur-xl">
+    <div class="flex flex-col p-4 m-2 rounded-2xl w-80 items-center shadow-white  shadow-lg bg-sky-50 bg-opacity-5 backdrop-blur-xl">
       <img src="">
       <h2>Project1</h2>
       <p>Project info</p>
@@ -211,8 +228,8 @@
         </div>
       </div>
 
-      <div class="flex flex-col custom-border justify-center md:mt-20 bg-neutral-800  bg-opacity-80 lg:col-span-2 md:col-span-2 h-fit mx-2">
-        <form class="w-auto flex flex-col text-left rounded px-8 pt-6 pb-2 my-2 border-solid border-stone-700 " >
+      <div class="flex flex-col justify-center md:mt-20  lg:col-span-2 md:col-span-2 w-auto mx-2">
+        <form class="w-[450px] h-autoflex flex-col custom-border text-left px-8 pt-6 pb-2 my-2 border-solid border-stone-700 bg-neutral-800 bg-opacity-80" >
           <div class="form-box mb-2  flex flex-col">
             <label class=" "for="full-name">Full name</label>
             <input class='inputs' type='text' id='full-name' placeholder='Enter your name'></input>
@@ -225,17 +242,20 @@
           <div class="mb-4 flex flex-col">
             <label for="message" >Message</label>
             <textarea class='inputs w-auto' type='text' placeholder='Tell me what you think...'id='message'></textarea>            
-          </div>   
+          </div>
+          <div>
+            <button type="button" id="send-btn" class="flex font-mono text-xl uppercase mb-7  bg-first hover:bg-second rounded-3xl w-fit transition ease-in-out hover:translate-x-3 hover:scale-110">
+              <a href="" class="flex px-10 py-2 ">
+              <span class="text-lg">Send</span>
+              <svg class="w-5 ml-2 " fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"></path>
+              </svg> </a>
+            </button> 
+          </div>  
       </form>
       
       
-      <button type="button" id="send-btn" class="flex font-mono text-xl uppercase mb-7 ml-8 bg-first hover:bg-second rounded-3xl w-fit transition ease-in-out hover:translate-x-3 hover:scale-110">
-        <a href="" class="flex px-10 py-2 ">
-        <span class="text-lg">Send</span>
-        <svg class="w-5 ml-2 " fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"></path>
-        </svg> </a>
-      </button> 
+      
     </div>          
   </section>
 
