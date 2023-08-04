@@ -18,7 +18,7 @@ module.exports = {
       },
       boxShadow: {
         neon: "0 0 5px theme('colors.first')",
-        neon2: "5px 0 40px 7px theme('colors.first')"
+        neon2: "5px 0 30px 5px theme('colors.first')"
       }
     },
   },
