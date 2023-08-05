@@ -11,8 +11,8 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- NAVIGATION BAR -->
-  <div class="fixed w-full shadow-neon py-2 bg-stone-800 text-sky-100 md:flex md:items-center md:justify-between z-50"> 
+    <!-- NAV SECTION -->
+  <nav class="fixed w-full shadow-neon py-2 bg-stone-800 text-sky-100 md:flex md:items-center md:justify-between z-50"> 
     <div class="flex justify-between items-center mx-6"> 
       <span class="text-3xl font-custom2"><a href="#home">Tom.dev</a></span>          
       <span class="hamburger md:hidden text-3xl cursor-pointer  hover:text-second ">
@@ -20,7 +20,7 @@
         <i id="icon" onclick="changeIcon()" class="fa-solid fa-bars hover:text-second duration-500 transition ease-in-out hover:translate-1 hover:scale-125"></i>
       </span>
     </div>
-
+        <!-- NAV BAR -->
     <ul id="nav" class="md:flex md:text-xl z-[1] opacity-95  md:static mr-10 absolute bg-stone-800 w-full md:w-auto py-1 text-center font-ysabeau2 font-bold hidden  ">
        <li class="nav-link px-3 py-3 hover:text-second duration-500 transition ease-in-out hover:-translate-x-2 hover:scale-110">
         <a class="px-4 py-3" href="#about-me">
@@ -35,11 +35,9 @@
           <i class="fa-regular fa-envelope mr-3"></i>Contact</a>
       </li>
     </ul>                
-  </div>
-
-      <!-- HOME SECTION -->
-      
-  <div id="home" class="flex h-screen md:pt-16 pt-10">
+  </nav>
+      <!-- HOME SECTION -->    
+  <section id="home" class="flex h-screen md:pt-16 pt-10">
     <div  class="mb-3 mx-3 mt-2 cursor-default pt-3 absolute font-ysabeau2">
       <h2  class="md:text-3xl text-xl tracking-widest">Home</h2>
       <div class="line h-1 w-6 shadow-neon animate-pulse rounded-full bg-first justify-center "></div>
@@ -54,7 +52,7 @@
         <a href="" class="p-3" target="_blank"><i class="fa-brands fa-square-github text-3xl text-zinc-200 hover:text-zinc-400 hover:duration-500 hover:scale-125" ></i></a>
         <a href="" class="p-3" target="_blank"><i class="fa-brands fa-brands fa-linkedin text-3xl text-zinc-200 hover:text-zinc-400 hover:duration-200 hover:scale-125" ></i></a>
       </div>
-      
+      <!-- HOME BUTTONS -->
       <div class="h-1 w-full my-4 rounded-full bg-first shadow-neon animate-pulse"></div>
       <div class="home-btn m-auto p-3 flex flex-col-reverse md:flex-row gap-4 items-center">
         <button type="button" class="w-40 font-mono text-xl uppercase my-2 shadow-neon hover:bg-second rounded-3xl  transition ease-in-out hover:translate-y-2 hover:scale-110 bg-black bg-opacity-60">
@@ -83,75 +81,73 @@
       <div class="circle medium shade4"></div>
       <div class="circle small shade5"></div>
     </div>
-  </div>
+  </section>
   <!-- ABOUT ME & SKILLS -->
-  <div id="about-me" class="md:flex mb-5 pt-20 ">
+    <!-- ABOUT -->
+  <section id="about-me" class="md:flex mb-5 pt-20 ">
     <div  class="flex-1">
-    <div class="mb-6 mx-3 cursor-default md:flex md:flex-col  font-ysabeau2 ">
-      <h2  class="md:text-3xl text-xl tracking-widest">About me</h2>
-      <div class="line h-1 w-6 shadow-neon animate-pulse rounded-full bg-first justify-center"></div>
-    </div>
+      <div class="mb-6 mx-3 cursor-default md:flex md:flex-col  font-ysabeau2 ">
+        <h2  class="md:text-3xl text-xl tracking-widest">About me</h2>
+        <div class="line h-1 w-6 shadow-neon animate-pulse rounded-full bg-first justify-center"></div>
+      </div>
       <div class="bg-stone-900 bg-opacity-10 md:bg-transparent rounded-2xl  m-auto p-6 md:mt-20 my-8 w-[340px] text-lg md:text-2xl text-justify font-rajdhani first-letter:text-4xl">
            My name is <span class="font-medium text-3xl text-first">Tom</span>, I am self taught <span class="font-medium text-2xl text-first"> front-end  </span>developer with attitude to learn and create. I am aspried to join the tech industry.
       </div>
     </div>
-        
+    <!-- SKILLS -->
     <div id="skills" class="flex-1 mr-3">
         <div class="mb-6 mx-3 cursor-default font-ysabeau2 flex-col ">
           <h2 class="md:text-3xl text-xl tracking-widest flex">Skills and tools</h2>
           <div class="line h-1 w-5 shadow-neon animate-pulse rounded-full bg-first "></div>
         </div>    
-      <div class="grid grid-cols-3 md:grid-cols-4 w-auto gap-5 px-5  mt-16">
-        <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
-          <img class="w-12 h-12 p-1" src="../src/icons/html-5-svgrepo-com.svg">
-          <h4>HTML5</h4>
+        <div class="grid grid-cols-3 md:grid-cols-4 w-auto gap-5 px-5  mt-16">
+          <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
+            <img class="w-12 h-12 p-1" src="../src/icons/html-5-svgrepo-com.svg">
+            <h4>HTML5</h4>
+          </div>
+          <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
+            <img class="w-12 h-12 p-1" src="../src/icons/css-3-svgrepo-com.svg">
+            <h4>CSS3</h4>
+          </div>
+          <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
+            <img class="w-12 h-12 p-1" src="../src/icons/tailwind-svgrepo-com.svg">
+            <h4>TAILWIND</h4>
+          </div>
+          <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
+            <img class="w-12 h-12 p-1" src="../src/icons/javascript-svgrepo-com.svg">
+            <h4>JAVASRIPT</h4>
+          </div>
+          <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
+            <img class="w-12 h-12 p-1" src="../src/icons/github-color-svgrepo-com.svg">
+            <h4>GITHUB</h4>
+          </div>
+          <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
+            <img class="w-12 h-12 p-1" src="../src/icons/visual-studio-code-svgrepo-com.svg">
+            <span>VSCode</span>
+          </div>
+          <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
+            <img class="w-12 h-12 p-1" src="../src/icons/npm-svgrepo-com.svg">
+            <span>NPM</span>
+          </div>
+          <div class="flex flex-col w-24 h-24 p-3  m-2 rounded-md items-center bg-black bg-opacity-10">
+            <img class="w-12 h-12 p-1" src="../src/icons/api-svgrepo-com.svg">
+            <span>RestfulAPI</span>
+          </div>       
         </div>
-        <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
-          <img class="w-12 h-12 p-1" src="../src/icons/css-3-svgrepo-com.svg">
-          <h4>CSS3</h4>
-        </div>
-        <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
-          <img class="w-12 h-12 p-1" src="../src/icons/tailwind-svgrepo-com.svg">
-          <h4>TAILWIND</h4>
-        </div>
-        <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
-          <img class="w-12 h-12 p-1" src="../src/icons/javascript-svgrepo-com.svg">
-          <h4>JAVASRIPT</h4>
-        </div>
-        <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
-          <img class="w-12 h-12 p-1" src="../src/icons/github-color-svgrepo-com.svg">
-          <h4>GITHUB</h4>
-        </div>
-        <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
-          <img class="w-12 h-12 p-1" src="../src/icons/visual-studio-code-svgrepo-com.svg">
-          <span>VSCode</span>
-        </div>
-        <div class="flex flex-col w-24 h-24 p-2  m-2 rounded-md items-center bg-black bg-opacity-10">
-          <img class="w-12 h-12 p-1" src="../src/icons/npm-svgrepo-com.svg">
-          <span>NPM</span>
-        </div>
-        <div class="flex flex-col w-24 h-24 p-3  m-2 rounded-md items-center bg-black bg-opacity-10">
-          <img class="w-12 h-12 p-1" src="../src/icons/api-svgrepo-com.svg">
-          <span>RestfulAPI</span>
-        </div>
-        
-  
-  
-          
-        </div>
-      </div>
     </div>
-  
+  </section>
   <!-- PROJECTS SECTION -->
+    <!-- HEADER -->
   <div id="projects"  class="mb-3 mx-3  cursor-default font-ysabeau2  pt-14 md:pt-20">
     <h2 class="md:text-3xl text-xl tracking-widest ">Projects</h2>
     <div class="line h-1 w-6 shadow-neon animate-pulse rounded-full bg-first justify-center"></div>
-  </div> 
-  <div class="p-5 grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center md:m-10 lg:m-20">
+  </div>
+     <!--PROJECTS  -->
+  <section class="p-5 grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center md:m-10 lg:m-20">
     <div class="flex flex-col border-none border-2 shadow-slate-950 shadow-lg overflow-auto rounded-3xl w-fit items-center bg-sky-50 bg-opacity-5 backdrop-blur-xl">
       <div>
-      <img class="" src="../src/weather-image.png">
-    </div>
+        <img class="" src="../src/weather-image.png">
+      </div>
       <div class="p-5 flex flex-col gap-3 items-center">
         <h2>Project1</h2>
         <p class="w-60 text-clip">Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info </p>
@@ -164,19 +160,16 @@
         <div class="buttons">
           <button type="button" class="w-20 h-8 font-mono uppercase  md:animate-pulse shadow-neon hover:bg-second rounded-3xl transition ease-in-out hover:-translate-3 hover:scale-110">
             <a href="http://www.google.com" class="flex justify-center " target="_blank">
-            <span class="">Resume</span>
-            
-             </a>
+            <span class="">Resume</span>            
+            </a>
           </button>
           <button type="button" class="w-20 h-8 font-mono uppercase my-2   md:animate-pulse shadow-neon hover:bg-second rounded-3xl transition ease-in-out hover:-translate-3 hover:scale-110">
             <a href="http://www.google.com" class="flex justify-center " target="_blank">
-            <span class="">Resume</span>
-            
-             </a>
+            <span class="">Resume</span>            
+            </a>
           </button>
         </div>
-      </div>
-      
+      </div>      
     </div>
     <div class="flex flex-col border-none border-2 shadow-neon overflow-auto rounded-3xl w-fit items-center bg-sky-50 bg-opacity-5 backdrop-blur-xl">
       <img class="" src="../src/stopwatch.png">
@@ -193,8 +186,7 @@
           <button type="button" class="w-20 font-mono uppercase my-2  md:animate-pulse shadow-neon hover:bg-second rounded-3xl transition ease-in-out hover:-translate-3 hover:scale-110">
             <a href="http://www.google.com" class="flex justify-center py-2" target="_blank">
             <span class="text-lg">Resume</span>
-            
-             </a>
+            </a>
           </button>
           <button type="button" class="w-20 font-mono text-xl uppercase my-2  md:animate-pulse shadow-neon hover:bg-second rounded-3xl transition ease-in-out hover:-translate-3 hover:scale-110">
             <a href="http://www.google.com" class="flex justify-center py-2" target="_blank">
@@ -204,9 +196,7 @@
           </button>
         </div>
       </div>
-      
     </div>
-
     <div class="flex flex-col border-none border-2 shadow-xl overflow-auto rounded-3xl w-fit items-center bg-sky-50 bg-opacity-5 backdrop-blur-xl">
       <img class="" src="../src/weather-image.png">
       <div class="p-5 flex flex-col items-center">
@@ -221,21 +211,17 @@
         <div class="buttons">
           <button type="button" class="w-20 font-mono uppercase my-2  md:animate-pulse shadow-neon hover:bg-second rounded-3xl transition ease-in-out hover:-translate-3 hover:scale-110">
             <a href="http://www.google.com" class="flex justify-center py-2" target="_blank">
-            <span class="text-lg">Resume</span>
-            
-             </a>
+            <span class="text-lg">Resume</span>            
+            </a>
           </button>
           <button type="button" class="w-20 font-mono text-xl uppercase my-2  md:animate-pulse shadow-neon hover:bg-second rounded-3xl transition ease-in-out hover:-translate-3 hover:scale-110">
             <a href="http://www.google.com" class="flex justify-center py-2" target="_blank">
             <span class="text-lg">Resume</span>
-            
-             </a>
+            </a>
           </button>
         </div>
-      </div>
-      
+      </div>      
     </div>
-
     <div class="flex flex-col border-none border-2 shadow-neon2 overflow-auto rounded-3xl w-fit items-center bg-sky-50 bg-opacity-5 backdrop-blur-xl">
       <img class="" src="../src/weather-image2.png">
       <div class="p-5 flex flex-col items-center">
@@ -250,43 +236,36 @@
         <div class="buttons">
           <button type="button" class="w-20 font-mono uppercase my-2  md:animate-pulse shadow-neon hover:bg-second rounded-3xl transition ease-in-out hover:-translate-3 hover:scale-110">
             <a href="http://www.google.com" class="flex justify-center py-2" target="_blank">
-            <span class="text-lg">Resume</span>
-            
-             </a>
+            <span class="text-lg">Resume</span>            
+            </a>
           </button>
           <button type="button" class="w-20 font-mono text-xl uppercase my-2  md:animate-pulse shadow-neon hover:bg-second rounded-3xl transition ease-in-out hover:-translate-3 hover:scale-110">
             <a href="http://www.google.com" class="flex justify-center py-2" target="_blank">
-            <span class="text-lg">Resume</span>
-            
-             </a>
+            <span class="text-lg">Resume</span>            
+            </a>
           </button>
         </div>
-      </div>
-      
+      </div>      
     </div>
-  </div>
+  </section>
         <!-- CONTACT ME  -->
+          <!-- HEADER -->
   <div  id="contact" class="mt-2 mx-3 mb-3  cursor-default pt-12 ">
     <h2 class="md:text-3xl mt-1 text-xl tracking-widest ">Contact</h2>
     <div class="line h-1 w-6 rounded-full shadow-neon bg-first justify-center animate-pulse"></div>
   </div>    
   <section class="relative p-4 text-center md:grid md:grid-cols-4 lg:grid-cols-5 gap-10 font-ysabeau2">
-    <!-- -->
-    <!-- bg-gradient-to-tr from-gray-500 via-[#b6bef2] to-slate-800 -->
+          <!-- LINKS -->
       <div class=" pt-2 pb-8 md:m-5 my-auto mx-0 flex flex-col md:gap-10 gap-2  lg:col-span-3 md:col-span-2">
         <h2 class="p-2 my-4 text-4xl ">Get in touch</h2>
-        
-            <!-- <span class='text-left '>If you interested about a project collaboration or you simply want to ask me a question,
-               feel free to fill up the form or just send me an e-mail to tnil1143@gmail.com</span>          -->
         <div class='grid lg:grid-cols-2 lg:gap-10 gap-5 m-5 p-3 justify-center'>
           <a href="" class="p-2 flex hover:brightness-75 hover:duration-500" target="_blank"><i class="fa-solid fa-envelope opacity-20  text-5xl -translate-y-3 -translate-x-4"></i><span class="text-lg "> tnil1143@gmail.com</span></a>
           <a href="" class="p-2 flex hover:brightness-75 hover:duration-500" target="_blank"><i class="fa-solid fa-phone opacity-20 text-5xl -translate-y-3 -translate-x-4"></i><span class="text-lg"> (+353) 833902257</span></a>
           <a href='https://www.linkedin.com/in/t-nil-b5b88a239/' class="p-2 flex hover:brightness-75 hover:duration-500" target="_blank"><i class="fa-brands fa-linkedin opacity-20 text-5xl -translate-y-3 -translate-x-4"></i><span class="text-lg">moj.linked.in.gegwgw</span></a>
-          <a href='https://github.com/nil1143' class="p-2 flex hover:brightness-75 hover:duration-500" target="_blank"><i class="fa-brands fa-square-github opacity-20 text-5xl -translate-y-3 -translate-x-4"></i><span class="text-lg">https://github.com/nil1143</span></a>
-           
-          <!-- HIDDEN MODAL -->
+          <a href='https://github.com/nil1143' class="p-2 flex hover:brightness-75 hover:duration-500" target="_blank"><i class="fa-brands fa-square-github opacity-20 text-5xl -translate-y-3 -translate-x-4"></i><span class="text-lg">https://github.com/nil1143</span></a>                    
         </div> 
       </div>
+        <!-- HIDDEN MODAL -->
       <div id="modal" class=" hidden absolute p-5 bg-third rounded-2xl md:ml-[450px] mt-10">
         <h3 class="m-5 p-1 md:text-3xl text-xl mb-5">Your message has been sent!</h3>
         <div id="close-btn" class=" mb-7  bg-first rounded-3xl w-fit mt-5 md:mt-0">
@@ -294,7 +273,7 @@
             <span >Close</span></a>
         </div>
       </div>
-
+          <!-- FORM -->
       <div class="flex flex-col justify-center md:mt-20  lg:col-span-2 md:col-span-2 w-auto items-center ">
         <form class="w-[385px] h-auto flex-col custom-border text-left px-8 pt-6 pb-2 my-2 border-solid border-stone-700 bg-neutral-800 bg-opacity-80" >
           <div class="form-box mb-2  flex flex-col">
@@ -319,14 +298,9 @@
               </svg> </a>
             </button> 
           </div>  
-      </form>
-      
-      
-      
+      </form>          
     </div>          
   </section>
-
-
-    <script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
