@@ -8,7 +8,8 @@ module.exports = {
         second: '#86C232', // green
         third: '#222629', // dark
         fourth: '#474B4F', // gray
-        fifth: '#6B6E70' // silver
+        fifth: '#6B6E70',
+        html: 'rgb(255, 94, 0)' // silver
       },
       fontFamily: {
         inconsolata: ['"Inconsolata"', 'monospace'],
