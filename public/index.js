@@ -30,15 +30,15 @@ const changeIcon = () => {
 
 const sendBtn = document.querySelector('#send-btn')
 const modal = document.querySelector('#modal')
+const allInputs = document.querySelectorAll('.inputs')
 
 sendBtn.addEventListener('click', e => 
 {
     e.preventDefault();
-    checkInputs()
-    checkEmail(email)
-
-    checking()
-
+    checkInputs();
+    checkEmail(email);
+    checking();
+ 
 })
 
 const checking = () => {
@@ -56,7 +56,6 @@ const checking = () => {
     console.log(errorCount);
 }
 
-const allInputs = document.querySelectorAll('.inputs')
 
 const checkInputs = () => {
     allInputs.forEach(el => {
@@ -95,4 +94,3 @@ closeBtn.addEventListener('click', e => {
     e.preventDefault();
     modal.classList.add('hidden')
 })
-
