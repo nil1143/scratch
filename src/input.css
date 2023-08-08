@@ -2,98 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-} */
-
-body{
+body {
     background: #1e1e1e;
     transition: 0.3s;
     color: rgb(224 242 254);
-    /* #3399ff -main, goldenrod  */
-    
+    /* #3399ff -main, goldenrod  */    
   }
   
-  
-  .circle{
+  .circle {
     position: fixed;
     border-radius: 50%;
     background: #86C232;
     animation: ripple 15s infinite;
     box-shadow: 0px 0px 1px 0px #ffffff;
-    /* #508fb9, yellow nice- rgb(255, 210, 114) */
-    
+    /* #508fb9, yellow nice- rgb(255, 210, 114) */  
   }
   
-  .small{
+  .small {
     width: 150px;
     height: 150px;
     right: -75px;
     bottom: 250px;
   }
   
-  .medium{
+  .medium {
     width: 300px;
     height: 300px;
     right: -150px;
     bottom: 175px;
   }
   
-  .large{
+  .large {
     width: 450px;
     height: 450px;
     right: -225px;
     bottom: 100px;
   }
   
-  .xlarge{
+  .xlarge {
     width: 600px;
     height: 600px;
     right: -300px;
     bottom: 25px;
   }
   
-  .xxlarge{
+  .xxlarge {
     width: 750px;
     height: 750px;
     right: -375px;
     bottom: -50px;
   }
   
-  .shade1{
+  .shade1 {
     opacity: 0.1;
   }
-  .shade2{
+  .shade2 {
     opacity: 0.2;
   }
   
-  .shade3{
+  .shade3 {
     opacity: 0.3;
   }
   
-  .shade4{
+  .shade4 {
     opacity: 0.4;
   }
   
-  .shade5{
+  .shade5 {
     opacity: 0.5;
   }
   
@@ -130,55 +105,10 @@ body{
     border: solid 1px #8a8a8a;
     border-radius: 40px;
     
-    /* background: white; */
-    /* goldenrod:  #daa520 */
-    /* nice white #e2e2e2 */
 }
 
 .button {
     padding: 5px;
 }
-.nav-link {
-  scroll-behavior: smooth;
-}
 
-/* .project-box {
-  display:flex;
-  flex-direction: column;
-  margin: 35px;
-  align-items: center;
-} */
 
-.skill-icons {
-  fill: white;
-}
-/* 
-#nav a:before
-{
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    top: 0px;
-    content: '';
-    background: #FFF;
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-
-#nav a:hover:before
-{
-    height: 100%;
-}
-
-#nav a
-{
-    color: #cdb9b9;
-    text-decoration: none;
-    
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-} */
