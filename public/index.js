@@ -92,5 +92,10 @@ const closeBtn = document.querySelector('#close-btn')
 
 closeBtn.addEventListener('click', e => {
     e.preventDefault();
-    modal.classList.add('hidden')
+    modal.classList.add('hidden');
+
+    allInputs.forEach(el => {
+        el.value = ''
+    })
 })
+
