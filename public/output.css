@@ -628,6 +628,16 @@ video {
   margin-right: 2.5rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1474,6 +1484,14 @@ body {
 
   .md\:m-5 {
     margin: 1.25rem;
+  }
+
+  .md\:m-16 {
+    margin: 4rem;
+  }
+
+  .md\:m-12 {
+    margin: 3rem;
   }
 
   .md\:ml-\[450px\] {
