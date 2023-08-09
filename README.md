@@ -4,8 +4,8 @@
 
 
 ## Responsive, single page portfolio website, designed in Tailwind CSS from scratch by me. 
-<img  src="/src/home-large.png">
-<img center src="/src/home-mobile.png">
+<img width="200" height="200" src="/src/home-large.png">
+<img width="200" height="200" src="/src/home-mobile.png">
 
 ## This 5 sections website include:
 
