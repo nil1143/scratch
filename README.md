@@ -9,8 +9,7 @@
 <img src="/src/home-mobile.png">
 </div>
 ## This 5 sections website include:
-
-
+<br>
 *Nav section with functionable hamburger menu for smaller devices 
 
 *Home/Hero section which will also navigate you through the website (my Resume, portfolio ReadMe)
@@ -20,3 +19,5 @@
 *Projects section - some of the projects I recently made
 
 *Contact me with the links and functionable form, checks email validation and other inputs. Modal appearing after filling up the form correctly
+
+Live here: <a>https://nil1143.github.io/scratch/public/</a>
